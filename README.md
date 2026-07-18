@@ -154,6 +154,9 @@ npx playwright show-report
 ```
 
 ---
+## playwright report summary view
+<img width="1370" height="237" alt="report_summary" src="https://github.com/user-attachments/assets/e564e8d7-abed-467c-922e-10a28fd12c4b" />
+
 
 ## CI/CD
 
