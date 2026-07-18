@@ -41,11 +41,11 @@ export class LoginPage {
 }
 
   async login(email: string, password: string) {
-    console.log("Current URL:", this.page.url());
+    
     await this.emailInput.fill(email);
-    console.log("Email filled");
+    
     await this.passwordInput.fill(password);
-    console.log("Password filled");
+   
     await this.loginButton.click();
         console.log("Clicked login");
   }
