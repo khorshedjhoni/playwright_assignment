@@ -1,4 +1,4 @@
-import { Page, Locator } from "@playwright/test";
+import { Page, Locator,expect } from "@playwright/test";
 
 export interface AgentData {
 
@@ -56,6 +56,11 @@ export class SignUpPage {
     async signUp(agent: AgentData) {
 
         await this.signUpLink.click();
+        await expect(this.fullNameInput).toBeVisible({ timeout: 30000 });
+        await this.page.screenshot({
+  path: "after-signup-click.png",
+  fullPage: true,
+});
 
         await this.fullNameInput.fill(agent.name);
 
